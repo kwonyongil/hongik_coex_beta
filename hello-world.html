@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  
+  
+  
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko"  xml:lang="ko">
+<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+   
+</head>
+<body>
+ <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        
+<audio src = "dding.wav" id="dding"></audio>
+
+<div id="covor">
+    <div id="line">
+    </div>
+        <div id="hong">
+            <p class="hoho">HONGIK</p>
+            <p class="hoho" id="uni">UNIVERSITY</p>
+        </div>
+        <div id="nav">
+            <marquee id="scrol", scrollamount="9", behavior=scrol><span id="scrol1">홍익대학교&nbsp; 서울・세종캠퍼스&nbsp; 상담이&nbsp; 진행&nbsp; 중입니다.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="scrol2">번호표가&nbsp; 없으신&nbsp; 분들은&nbsp; 줄을&nbsp; 서실&nbsp; 수&nbsp; 없습니다.</span>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="scrol3">오늘&nbsp; 상담표&nbsp; 배부&nbsp; 중입니다.</span></span></marquee>
+    
+        </div>
+</div>
+   
+<div id="num">
+    <span id="first">1</span> <span id="cen">-</span> <span id="sec">10</span>
+</div>
+<div id="main">
+        <div id="main_2">
+            <p class="ii">번호표를 가지고 계신 분들은</p>
+            <p class="ii">안내에 따라 줄을 서주시기 바랍니다.</p>
+        </div>
+
+</div>
+<div id="footer">
+    <img  src="/hogg.png" id="image">
+    <div id="footer_0">
+        <p id="footer_1">홍익대학교 입학관리본부</p>
+    </div>
+</div>
+<style>
+
+ 
+ @font-face { font-family: 'Jeju'; src: url(/JejuGothic-Regular.ttf) format('truetype');}
+ @font-face { font-family: 'digital'; src: url(/digital-7.ttf) format('truetype');}
+  @font-face { font-family: 'digital-7'; src: url(/digital-7mono.ttf) format('truetype');}
+
+ @font-face { font-family: 'Luckiest Guy'; src: url(/LuckiestGuy.ttf) format('truetype');}
+
+
+    #covor{
+        position:relative;
+        background-color:white;
+        height:17vh;
+        display:flex;
+        align-items:center;
+
+       
+    }
+    #line{
+        position:absolute;
+        height:15vh;
+        width:95vw;
+        background-color:white;
+        border-top:2px solid #002148;
+        border-bottom:2px solid #002148;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    #hong{
+        margin:0;
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width: 25vw;
+        height: 13vh;
+        background-color:white;
+    }
+    .hoho{
+         font-family: Corbel, Helvetica, Arial, sans-serif !important;
+         color:#002148;
+         letter-spacing:0.5em;
+         font-size:20px;
+         font-weight:400;
+    }
+    #uni{
+        border-bottom: 2px solid #002148;
+    }
+    #nav{
+        margin:0;
+        margin-left: 25vw;
+        position:absolute;
+        height:13vh;
+        color:#002148;
+        background-color:white;
+        display:flex;
+        align-items:center;
+        margin-right:30px;
+    }
+    #scrol{
+        font-size:65px;
+        font-weight:800;
+        
+    }
+    #scrol1{
+        font-size:65px;
+        font-weight:600;
+        color:#ff7f00;
+    }
+    #scrol2{
+        font-size:65px;
+        font-weight:600;
+        color:green;
+    }
+    #scrol3{
+        font-size:65px;
+        font-weight:600;
+        color:red;
+    }
+      #num{
+        height:45vh;
+        text-align:center;
+        color:yellow;
+        background-color:#002148;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:320px;
+        
+       
+    }
+    #cen{
+        margin-top:40px;
+           font-family:digital-7;
+           letter-spacing:0.1em;
+           line-height:1.2em;
+           font-weight:550;
+        border-top:2px solid #ff7f00;
+        display:inline-block;
+    }
+    #first{
+        margin-top:40px;
+           font-family:digital-7;
+           letter-spacing:0.1em;
+           line-height:1.2em;
+           font-weight:550;
+        border-top:2px solid #ff7f00;
+        display:inline-block;
+    }
+    #sec{
+        display:inline-block;
+        margin-top:40px;
+        font-family:digital-7;
+           letter-spacing:0.1em;
+           line-height:1.2em;
+           font-weight:550;
+        border-top:2px solid #ff7f00;
+        display:inline-block;
+    }
+    #number{
+        margin-top:40px;
+           font-family:digital-7;
+           letter-spacing:0.1em;
+           line-height:1.2em;
+           font-weight:550;
+        border-top:2px solid #ff7f00;
+        
+    }
+    #coco{
+        margin-top:5%;
+        font-size: 250px;
+    }
+    #main{
+        position:relative;
+        height:25vh;
+        display:flex;
+        justify-content:center;
+       
+        color: yellow;
+        background-color:#002148;
+        font-size:40px;
+    }
+ 
+    #main_2{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        margin-bottom:10vh;
+        width:100vw;
+         width:80vw;
+   
+        border-bottom:2px solid #ff7f00;
+    }
+    .ii{
+         font-family:jeju;
+         font-size:64px;
+         font-weight:400;
+    
+    }
+    
+    #footer{
+        height:15vh;
+        color:white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color:#2468a2;
+        text-align:center;
+        font-size:55px;
+        
+    }
+    #footer_1{
+        
+    }
+    #image{
+      margin-right:2%;
+        width:100px;
+        height:100px;
+        
+    }
+    #image2{
+        width:300px;
+        height:90px;
+        
+    }
+    body{
+        margin:0;
+    }
+    p{
+        font-family:jeju;
+        margin:0;
+        
+    }
+    text{
+     
+        margin:0;
+        
+    }
+  
+    
+</style>
+
+
+<script language="JavaScript">
+var i = 1;   // 앞에 숫자
+var j = 10;  //뒤에숫자
+var t = 0;  // 몫
+
+var f = 1;
+var k = 0;  //나머지
+
+document.onkeydown = checkKeycode
+var order_num = new Array("&nbsp;대기중&nbsp;","","&nbsp;1-10&nbsp;","&nbsp;6-15&nbsp;","&nbsp;11-20&nbsp;","&nbsp;16-25&nbsp;","&nbsp;21-30&nbsp;","&nbsp;26-35&nbsp;","&nbsp;31-40&nbsp;","&nbsp;36-45&nbsp;","&nbsp;41-50&nbsp;","&nbsp;46-55&nbsp;","&nbsp;51-60&nbsp;","&nbsp;56-65&nbsp;","&nbsp;61-70&nbsp;","&nbsp;66-75&nbsp;","&nbsp;71-80&nbsp;","&nbsp;76-85&nbsp;","&nbsp;81-90&nbsp;","&nbsp;86-95&nbsp;","&nbsp;91-100&nbsp;","&nbsp;96-106&nbsp;","101-110");
+var order_num_2 = new Array("&nbsp;대기중&nbsp;","&nbsp;1-5&nbsp;","&nbsp;6-10&nbsp;","&nbsp;11-15&nbsp;","&nbsp;16-20&nbsp;","&nbsp;21-25&nbsp;","&nbsp;26-30&nbsp;","&nbsp;31-35&nbsp;","&nbsp;36-40&nbsp;","&nbsp;41-45&nbsp;","&nbsp;46-50&nbsp;","&nbsp;51-55&nbsp;","&nbsp;56-60&nbsp;","&nbsp;61-65&nbsp;","&nbsp;66-70&nbsp;","&nbsp;71-75&nbsp;","&nbsp;76-80&nbsp;","&nbsp;81-85&nbsp;","&nbsp;86-90&nbsp;","&nbsp;91-95&nbsp;","&nbsp;96-100&nbsp;","101-105","106~110");
+function checkKeycode(e) {
+    var keycode;
+    if (window.event) keycode = window.event.keyCode;
+  
+    else if (e) keycode = e.which;
+
+
+    if (keycode == 13){
+
+        i= j+1
+        document.getElementById("first").innerHTML= j+1;
+        j= j+10  
+        document.getElementById("sec").innerHTML= j;
+
+        document.getElementById("dding").play();
+        //enter key 는 10 차이
+    }
+    else if (keycode == 32){
+        i= j+1
+        document.getElementById("first").innerHTML= i
+        j= j+5
+        document.getElementById("sec").innerHTML= j
+        document.getElementById("dding").play();
+        //space bar key 는 5 차이
+          
+    }
+    else if (keycode == 9){
+        i= j+1
+        document.getElementById("first").innerHTML= i
+        j= j+15
+        document.getElementById("sec").innerHTML= j
+        document.getElementById("dding").play();
+        //tap key 는 15 차이
+          
+    }
+    else if(keycode == 16) {
+        i= j+1
+        document.getElementById("first").innerHTML= i
+        j= j+20
+        document.getElementById("sec").innerHTML= j
+        document.getElementById("dding").play();
+        //shift key 는 20 차이
+        
+    }
+    else if(keycode == 8) {
+        i= i-10
+        document.getElementById("first").innerHTML= i
+        j= j-10
+        document.getElementById("sec").innerHTML= j
+        document.getElementById("dding").play();
+        //backspace 는 10 차이뺴기
+        
+    }
+    else if(keycode == 68) {
+        i= i-20
+        document.getElementById("first").innerHTML= i
+        j= j-20
+        document.getElementById("sec").innerHTML= j
+        document.getElementById("dding").play();
+        //'d'키 는 20 차이뺴기
+        
+    }
+    else if(keycode == 70) {
+        i= i-5
+        document.getElementById("first").innerHTML= i
+        j= j-5
+        document.getElementById("sec").innerHTML= j
+        document.getElementById("dding").play();
+        // 'f 는 5 차이뺴기
+        
+    }    
+    else if(keycode == 191) {
+        i= i-15
+        document.getElementById("first").innerHTML= i
+        j= j-15
+        document.getElementById("sec").innerHTML= j
+        document.getElementById("dding").play();
+        // '/' 는 15 차이뺴기
+        
+    }
+    else if(keycode == 81) {
+       f = 1
+        // 'q' 은 앞자리 수정
+        
+    }
+    else if(keycode == 87) {
+         f= 2
+        // 'w' 는 뒷자리 수정
+        
+    }
+    
+    else if(keycode == 69) {
+          f= 3
+        // 'e' 는 앞 자리 십의자리 +1 
+        
+    }
+   else if(keycode == 82) {
+          f= 4
+        // 'r' 는 뒷 자리 십의자리 +1 
+        
+    }
+    
+    else if(keycode == 48){
+        if(f==1){
+            k = i%10
+            t = i/10
+            i = t*10 - k
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k 
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        // 0 누르면 1의자리 0
+    }
+    else if(keycode == 49){
+        if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 1
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 1
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 1
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 1
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+               // 1 누르면 앞에숫자 1의자리 1
+    }
+    else if(keycode == 50){
+        if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 2
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 2
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 2
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 2
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+               // 2 누르면 앞에숫자 1의자리 2
+    }
+    else if(keycode == 51){
+       if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 3
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 3
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 3
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 3
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+               // 3 누르면 앞에숫자 1의자리 3
+    }
+    else if(keycode == 52){
+       if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 4
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 4
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 4
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 4
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+               // 4 누르면 앞에숫자 1의자리 4
+    }
+    else if(keycode == 53){
+        if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 5
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 5
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 5
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 5
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+       // 5누르면 앞에 숫자 1의자리 5
+    }
+    else if(keycode == 54){
+       if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 6
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 6
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 6
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 6
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+       // 6느루면 앞에 숫자 1의 자리 6
+    }
+    else if(keycode == 55){
+               if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 7
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 7
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 7
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 7
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+                // 7 누르면 앞에숫자 1의자리 7
+       
+    }
+    else if(keycode == 56){
+        if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 8
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 8
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 8
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 8
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }   
+               // 8 누르면 앞에숫자 1의자리 8
+       
+    }
+    else if(keycode == 57){
+        if( f  == 1){
+            k = i%10
+            t = i/10
+            i = t*10 - k + 9
+            document.getElementById("first").innerHTML=i
+            
+        }
+        else if(f == 2){
+            k = j%10
+            t = j/10
+            j = t*10 - k + 9
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+        else if(f == 3){
+            k = i%10
+            t = i/10 + 1
+            i = t*10 - k + 9
+            document.getElementById("first").innerHTML=i
+        }
+        else if(f == 4){
+            k = j%10
+            t = j/10 + 1
+            j = t*10 - k + 9
+            document.getElementById("sec").innerHTML=j
+            document.getElementById("dding").play();
+        }
+                // 9 누르면 앞에숫자 1의자리 9
+       
+    }
+    else if(keycode == 90){
+        document.getElementById("first").innerHTML=""
+        document.getElementById("sec").innerHTML=""
+        document.getElementById("cen").innerHTML="마감되었습니다."
+        document.getElementById("scrol3").innerHTML="오늘&nbsp; 상담표&nbsp; 배부가&nbsp; 종료되었습니다."
+       
+        document.getElementById("cen").setAttribute("style", "font-size: 130px;border-top: 0px solid;margin-top:40px;font-family:jeju;letter-spacing:0.1em;line-height:1.2em;font-weight:700;");
+        // 'z'는 상담 마감 멘트
+    }
+    else if(keycode == 88){
+        document.getElementById("first").innerHTML=""
+        document.getElementById("sec").innerHTML=""
+        document.getElementById("cen").innerHTML="대기중"
+        document.getElementById("cen").setAttribute("style", "font-size: 200px;border-top: 0px solid;margin-top:40px;font-family:jeju;letter-spacing:0.1em;line-height:1.2em;font-weight:700;");
+        // 'x'는 대기중 멘트
+    }
+    else if(keycode == 83){
+        document.getElementById("first").innerHTML= i
+        document.getElementById("sec").innerHTML= j
+        document.getElementById("cen").innerHTML="-"
+        document.getElementById("cen").setAttribute("style", "margin-top:40px;font-family:digital-7;letter-spacing:0.1em;line-height:1.2em;font-weight:550;border-top:2px solid #ff7f00;display:inline-block;");
+        // 's'는 start i와 j 출력
+    }
+}
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
